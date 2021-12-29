@@ -5,15 +5,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/7c8bb5dd01.js" crossorigin="anonymous"></script>
+
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <!-- CSS -->
+  <link rel="stylesheet" href="/assets/styles/main.css">
   <link rel="stylesheet" href="/assets/styles/header.css">
   <link rel="stylesheet" href="/assets/styles/tab.css">
   <link rel="stylesheet" href="/assets/styles/feed.css">
   <title>ToDo Mate</title>
+
 </head>
 
 <body>
@@ -77,6 +83,41 @@
           </p>
         </li>
       </ul>
+    </div>
+  </div>
+
+
+  <!-- Top of calendar -->
+  <div class="container">
+    <ul class="friend-list">
+      <li><button class="friend-user active">이</button></li>
+      <li><button class="friend">강</button></li>
+      <li><button class="friend">홍</button></li>
+      <li><button type="button" class="friend-add-btn"><i class="fas fa-plus-circle"></i></button></li>
+    </ul>
+
+    <strong class="user-name">하랭</strong>
+    <div class="status">
+      <ul class="date">
+        <li class="date-year">2021년</li>
+        <li class="date-month">12월</li>
+        <li class="date-day">21일</li>
+      </ul>
+      <ul class="check-box">
+        <li class="check-box-img"><i class="fas fa-check-square"></i></li>
+        <li class="finish"><strong>36</strong></li>
+      </ul>
+
+      <ul class="like">
+        <li class="like-img"><i class="fas fa-heart"></i></li>
+        <li class="liked"><strong>32</strong></li>
+      </ul>
+      
+      <div class="move-btn">
+        <button type="button" class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button type="button" class="next-btn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+
     </div>
   </div>
 
@@ -156,6 +197,7 @@
       </li>
     </ul>
   </ul>
+
 </body>
 
 </html>

@@ -1,0 +1,140 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+ul,
+li {
+	list-style: none;
+}
+button {
+	border: 0;
+	outline: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+/* 임시 */
+.container {
+	position: absolute;
+	width: 100%;
+}
+/* ------------------------- */
+.friend-list {
+	position: absolute;
+	display: flex;
+	left: 76px;
+	top: 173px;
+}
+
+.friend {
+	display: inline-block;
+}
+.friend-user,
+.friend {
+	border-radius: 35px;
+	border: 1px solid transparent;
+	background-color: #5f5f5f;
+	width: 50px;
+	height: 50px;
+	left: 76px;
+	top: 173px;
+	color: white;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 35px;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.5s;
+	margin: 0 13px 0 0;
+}
+.friend-list .active {
+	border: 2px solid black;
+}
+
+.friend-user:hover,
+.friend:hover {
+	background-color: #c4c4c4;
+}
+.friend-add-btn {
+	cursor: pointer;
+	transition: 0.5s;
+	font-size: 50px;
+	color: #5f5f5f;
+}
+.friend-add-btn > i {
+	transition: 0.5s;
+}
+.friend-add-btn > i:hover {
+	color: #c4c4c4;
+}
+
+.user-name {
+	position: absolute;
+	left: 76px;
+	top: 245px;
+	font-weight: 900;
+	font-size: 30px;
+	line-height: 35px;
+}
+
+.status {
+	position: absolute;
+
+	left: 79px;
+	top: 303px;
+	display: flex;
+}
+
+.date {
+	display: flex;
+	margin: 0 12px 0 0;
+	font-weight: 900;
+	font-size: 30px;
+	line-height: 35px;
+}
+.date-year,
+.date-month,
+.date-day {
+	margin-right: 3px;
+}
+
+.check-box {
+	display: flex;
+}
+.check-box-img {
+	font-size: 20px;
+	margin: 0 3px 0 0;
+	line-height: 35px;
+}
+.finish {
+	font-weight: 900;
+	font-size: 20px;
+	line-height: 35px;
+	margin: 0 5px 0 0;
+}
+.like {
+	display: flex;
+	margin: 0 7px 0 0;
+}
+.liked {
+	font-weight: 900;
+	font-size: 20px;
+	line-height: 35px;
+}
+.like-img {
+	font-size: 20px;
+	line-height: 35px;
+	margin: 0 3px 0 0;
+}
+.move-btn {
+	display: flex;
+	margin: 0 0 0 60px;
+}
+
+.prev-btn,
+.next-btn {
+	font-size: 20px;
+	line-height: 35px;
+	margin: 0 10px 0 10px;
+	cursor: pointer;
+}

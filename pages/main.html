@@ -4,37 +4,44 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/styles/main.css">
+  <script src="https://kit.fontawesome.com/7c8bb5dd01.js" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
 <body>
   
-  <div class="friend-list">
-    <ul class="friend"></ul>
-    <ul class="friend"></ul>
-    <img src="/assets/images/friend-add-btn.png" alt="" class="friend-add-btn">
+  <div class="container">
+    <ul class="friend-list">
+      <li><button class="friend-user active">이</button></li>
+      <li><button class="friend">강</button></li>
+      <li><button class="friend">홍</button></li>
+      <li><button type="button" class="friend-add-btn"><i class="fas fa-plus-circle"></i></button></li>
+    </ul>
+
+    <strong class="user-name">하랭</strong>
+    <div class="status">
+      <ul class="date">
+        <li class="date-year">2021년</li>
+        <li class="date-month">12월</li>
+        <li class="date-day">21일</li>
+      </ul>
+      <ul class="check-box">
+        <li class="check-box-img"><i class="fas fa-check-square"></i></li>
+        <li class="finish"><strong>36</strong></li>
+      </ul>
+
+      <ul class="like">
+        <li class="like-img"><i class="fas fa-heart"></i></li>
+        <li class="liked"><strong>32</strong></li>
+      </ul>
+      
+      <div class="move-btn">
+        <button type="button" class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button type="button" class="next-btn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+
     </div>
-    
   </div>
-  <div class="user-name">하랭</div>
-
-  <div class="status">
-    <ul class="date">2021년 12월 21일</ul>    
-    <ul class="check-box">
-      <img src="/assets/images/check-box-img.png" alt="" class="check-box-img">
-      <li class="finish">36</li>
-    </ul>
-    <ul class="like">
-      <img src="/assets/images/like-img.png" alt="" class="like-img">
-      <li class="liked">32</li>
-    <ul/>
-    <ul class="move-btn"></ul>
-    <ul class="move-btn">
-      <img src="/assets/images/prev-btn.png" alt="" class="prev-btn">
-      <img src="/assets/images/next-btn.png" alt="" class="next-btn">
-
-    </ul>
-  </div>
-  
 
 </body>
 </html>

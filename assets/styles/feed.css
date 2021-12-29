@@ -1,0 +1,80 @@
+:root {
+    /* size */
+    --medium-font: 24px;
+    --big-font: 32px;
+    /* color */
+    --light-gray-color: #C4C4C4;
+    --blue-color: #5B6CFF;
+    /* font */
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.feed_row {
+    margin: 100px;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.check_box, .fix {
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background-color:transparent;
+    cursor: pointer;
+}
+
+.check_box {
+    display: flex;
+    margin-right: 12px;
+}
+
+.FeedTitle {
+    font-size: var(--big-font);
+    font-weight: bolder;
+}
+
+.feedAddBtn {
+    display: flex;
+    margin: var(--medium-font) 0 var(--medium-font) 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: var(--light-gray-color);
+    color: var(--blue-color);
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.26); 
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.40);
+}
+
+.todo_list, .done_list {
+    padding: 0;
+    margin: auto;
+}
+
+.todo_list {
+    margin-bottom: 11px;
+}
+
+.todo_row {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 11px;
+    align-items: center;
+}
+
+.todo_row:last-child {
+    margin-bottom: 0;
+}
+
+.todo {
+    display: flex;
+    align-items: center;
+}

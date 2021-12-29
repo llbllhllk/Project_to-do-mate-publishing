@@ -10,6 +10,8 @@
 }
 
 .header__tab-button {
+  border: none;
+  background-color: transparent;
   position : absolute;
   top: 47px;
   left: 30px;

@@ -1,13 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/styles/header.css">
+  <link rel="stylesheet" href="/assets/styles/tab.css">
   <link rel="stylesheet" href="/assets/styles/feed.css">
+  <title>ToDo Mate</title>
 </head>
+
 <body>
+  <!-- Header -->
+  <header class="header">
+    <button type="button" class="header__tab-button">
+      <img src="/assets/images/tab-button.png" alt="tab button">
+    </button>
+    <h1 class="header__title">
+      <a href="#">
+        ToDo Mate
+      </a>
+    </h1>
+  </header>
+
+  <!-- Tab -->
+  <div class="tab">
+    <!-- User -->
+    <div class="user">
+      <div class="user__info">
+        <h1 class="user__name">
+          하랭
+        </h1>
+        <strong class="user__email">
+          hahaha@naver.com
+        </strong>
+      </div>
+      <a href="#" class="user__edit">
+        관리
+      </a>
+    </div>
+
+    <!-- Goal -->
+    <div class="goal">
+      <div class="goal__header">
+        <h2 class="goal__title">목표</h2>
+        <a href="#" class="goal__edit">
+          관리
+        </a>
+      </div>
+      <ul class="goal__list">
+        <li class="goal__list-item">
+          수업
+        </li>
+      </ul>
+    </div>
+
+    <!-- Simple input -->
+    <div class="simple-input">
+      <div class="simple-input__header">
+        <h2 class="simple-input__title">간편입력</h2>
+        <a href="#" class="simple-input__edit">
+          관리
+        </a>
+      </div>
+      <ul class="simple-input__list">
+        <li class="simple-input__list-item">
+          <img class="simple-input__status" src="/assets/images/simple-input-status.svg" alt="simple input status">
+          <p>
+            입력내용
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Feed -->
   <ul class="feed_row">
     <h1 class="FeedTitle">Feed</h1>
     <button class="feedAddBtn">
@@ -19,6 +92,8 @@
         <img src="/assets/images/add-btn.png" alt="">
       </div>
     </button>
+
+    <!-- Todo list -->
     <ul class="todo_list">
       <li class="todo_row">
         <div class="todo">
@@ -54,6 +129,8 @@
         </button>
       </li>
     </ul>
+    
+    <!-- Done list -->
     <ul class="done_list">
       <li class="todo_row">
         <div class="todo">
@@ -80,5 +157,5 @@
     </ul>
   </ul>
 </body>
-<script src="main.js"></script>
+
 </html>

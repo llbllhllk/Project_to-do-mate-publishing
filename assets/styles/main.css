@@ -13,11 +13,11 @@ button {
 	cursor: pointer;
 }
 
-/* 임시 */
-.container {
-	position: absolute;
-	width: 100%;
+.main_container {
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
+
 /* ------------------------- */
 .friend-list {
 	position: absolute;

@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+input:focus {
+    outline:none;
+}
+
+/* Header */
+.header {
+    background-color: #000;
+    height: 94px;
+}
+
+.header_title {
+    text-align: center;
+    line-height: 94px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+/* Sign up */
+.sign-up_list {
+	display: grid;
+	place-content: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.sign-up_title {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+
+.sign_list {
+    margin-bottom: 30px;
+}
+
+.sign_item_title {
+    font-weight: normal;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.sign_input {
+    position: relative;
+}
+
+.sign_input::after {
+    content: "\f00c";
+    font-family:FontAwesome;
+    color: #cfd2d4;
+    position: absolute;
+    left: 465px;
+    top: 10px;
+}
+
+.sign_input_item,
+.sign-up_button {
+    width: 500px;
+    height: 35px;
+    padding-left: 14px;
+    font-size: 14px;
+    font-family: 'Nanum Gothic', sans-serif;
+    border-radius: 0;
+    border: 1px solid #ccd2d8;
+}
+
+.sign-info {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #696564;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.sign-err {
+    margin-top: 6px;
+    font-size: 12px;
+    color: red;
+    display: none;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.sign-up_button {
+    cursor: pointer;
+    background-color: #C4C4C4;
+    border: 1px solid black;
+    font-weight: bolder;
+}

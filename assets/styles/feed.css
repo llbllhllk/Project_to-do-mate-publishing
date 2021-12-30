@@ -1,7 +1,7 @@
 :root {
     /* size */
     --medium-font: 24px;
-    --big-font: 32px;
+    --big-font: 48px;
     /* color */
     --light-gray-color: #C4C4C4;
     --blue-color: #5B6CFF;
@@ -14,8 +14,10 @@
 }
 
 .feed_row {
-    margin: 100px;
-    padding: 0;
+    position: absolute;
+    width: 35%;
+    left: 756px;
+	top: 173px;
 }
 
 li {
@@ -42,7 +44,10 @@ li {
 
 .feedAddBtn {
     display: flex;
-    margin: var(--medium-font) 0 var(--medium-font) 0;
+    justify-content: center;
+    align-items: center;
+    margin: 27px 0 30px 0;
+    padding: 8px 10px 8px 10px;
     border: 0;
     outline: 0;
     cursor: pointer;
@@ -51,6 +56,12 @@ li {
     border-radius: 5px;
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.26); 
     box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.40);
+}
+
+.feed_title {
+    font-size: 19px;
+    font-weight: bolder;
+    padding: 0 6px 0 6px;
 }
 
 .todo_list, .done_list {

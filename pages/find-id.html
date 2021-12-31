@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Font awesome -->
-  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/98a425b916.js" crossorigin="anonymous"></script>
 
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,7 @@
     rel="stylesheet">
 
   <!-- CSS -->
+  <link rel="stylesheet" href="/assets/styles/header.css">
   <link rel="stylesheet" href="/assets/styles/find-id.css">
   <title>아이디 찾기 - ToDo Mate</title>
 </head>
@@ -28,7 +29,7 @@
         ToDo Mate
       </a>
     </h1>
-    <a href="#" class="header__prev-btn">
+    <a href="#" class="header__prev-botton">
       <img src="/assets/images/prev-btn.png" alt="prev button" class="filter-white">
     </a>
   </header>
@@ -44,21 +45,23 @@
           <label class="find-id__input-title" for="email">
             이메일
           </label>
-          <input class="find-id__input" id="email" type="text" placeholder="이메일을 입력해주세요.">
+          <div class="find-id__input-container">
+            <input class="find-id__input" id="email" name="email" type="text" placeholder="이메일을 입력해주세요.">
+          </div>
 
           <!-- Alert -->
           <div class="find-id__alert">
-            <strong id="email-none" class="find-id__info">
+            <strong class="find-id__alert-info wrong">
               이메일을 입력해주세요.
             </strong>
-            <strong id="email-wrong" class="find-id__info">
+            <strong class="find-id__alert-info wrong">
               가입하지 않은 이메일입니다. 다시 확인해주세요.
             </strong>
-            <strong id="email-correct" class="find-id__info">
+            <strong class="find-id__alert-info correct">
               인증번호를 보냈습니다.
             </strong>
           </div>
-          <button id="email" class="find-id__btn" type="button">인증번호 보내기</button>
+          <button id="sending-certification" class="find-id__btn" type="button">인증번호 보내기</button>
         </li>
 
         <!-- Certification -->
@@ -69,21 +72,23 @@
             </label>
             <strong class="find-id__timer">3:00</strong>
           </div>
-          <input class="find-id__input" id="certification" type="text" placeholder="인증번호를 입력해주세요.">
+          <div class="find-id__input-container">
+            <input class="find-id__input" name="certification" id="certification" type="text" placeholder="인증번호를 입력해주세요.">
+          </div>
 
           <!-- Alert -->
           <div class="find-id__alert">
-            <strong id="certification-none" class="find-id__info wrong">
+            <strong id="certification" class="find-id__alert-info wrong">
               인증번호를 입력해 주세요.
             </strong>
-            <strong id="certification-correct" class="find-id__info correct">
+            <strong id="certification" class="find-id__alert-info correct">
               인증번호가 맞습니다.
             </strong>
-            <strong id="certification-wrong wrong" class="find-id__info">
+            <strong id="certification" class="find-id__alert-info wrong">
               인증번호가 틀립니다.
             </strong>
           </div>
-          <button id="certification" class="find-id__btn" type="button">인증 확인</button>
+          <button id="confirm-certification" class="find-id__btn" type="button">인증 확인</button>
         </li>
       </ul>
     </form>

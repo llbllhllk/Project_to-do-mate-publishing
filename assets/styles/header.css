@@ -1,33 +1,34 @@
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 /* Header */
 .header {
-  background-color: #000;
-  height: 94px;
+	background-color: #000;
+	height: 94px;
 }
 
+.header__prev-button,
 .header__tab-button {
-  border: none;
-  background-color: transparent;
-  position : absolute;
-  top: 47px;
-  left: 30px;
-  transform: translateY(-50%);
-  cursor: pointer;
+	border: none;
+	background-color: transparent;
+	position: absolute;
+	top: 47px;
+	left: 30px;
+	transform: translateY(-50%);
+	cursor: pointer;
 }
 
 .header__title {
-  text-align: center;
-  line-height: 94px;
+	text-align: center;
+	line-height: 94px;
 }
 
 .header__title > a {
-  font-family: 'Roboto', sans-serif;
-  color: #fff;
-  font-size: 48px;
-  text-decoration: none;
-  font-style: italic;
+	font-family: "Roboto", sans-serif;
+	color: #fff;
+	font-size: 48px;
+	text-decoration: none;
+	font-style: italic;
 }

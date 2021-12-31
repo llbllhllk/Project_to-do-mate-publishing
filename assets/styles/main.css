@@ -19,18 +19,23 @@ button {
 	cursor: pointer;
 }
 
+/* main container */
+
 .main_container {
 	max-width: 1300px;
 	margin: 70px auto;
 	display: flex;
-	/* grid-template-columns: repeat(2, 1fr); */
 }
+
+/* left container */
 
 .container {
 	width: 50%;
 }
 
-.friend--list {
+/* friend */
+
+.friend-container {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 20px;
@@ -40,7 +45,7 @@ button {
 	display: inline-block;
 }
 
-.friend-list {
+.friend-container__friend-list {
 	width: 80%;
 	overflow: auto;
 	white-space: nowrap;
@@ -51,7 +56,7 @@ button {
 	/* display: none; */
 }
 
-.friend-list li {
+.friend-container__friend-list li {
 	display: inline-block;
 }
 
@@ -71,7 +76,7 @@ button {
 	margin: 0 8px 0 0;
 }
 
-.friend--list .active {
+friend-container__friend-list .active {
 	border: 2px solid black;
 }
 
@@ -95,11 +100,15 @@ button {
 	transition: 0.5s;
 }
 
+/* user name */
+
 .user-name {
 	font-weight: 900;
 	font-size: 30px;
 	margin-bottom: 15px;
 }
+
+/* status */
 
 .status {
 	left: 79px;

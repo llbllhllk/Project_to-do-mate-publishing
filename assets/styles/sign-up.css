@@ -4,15 +4,20 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration:none;
+    color: white;
+}
+
 ul, li {
     list-style: none;
 }
+
 
 input:focus {
     outline:none;
 }
 
-/* Header */
 .header {
     background-color: #000;
     height: 94px;
@@ -20,17 +25,19 @@ input:focus {
 
 .header_title {
     text-align: center;
+    font-style: italic;
     line-height: 94px;
     font-family: 'Roboto', sans-serif;
     color: white;
 }
 
 /* Sign up */
-.sign-up_list {
-	display: grid;
-	place-content: center;
-    margin-top: 50px;
-    margin-bottom: 100px;
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
 }
 
 .sign-up_title {
@@ -54,6 +61,7 @@ input:focus {
 
 .sign_input {
     position: relative;
+    margin-top: 7px;
 }
 
 .sign_input::after {
@@ -91,9 +99,31 @@ p.sign-err {
     font-family: 'Nanum Gothic', sans-serif;
 }
 
+p.active {
+    display: block;
+}
+
+p.hide {
+    display: none;
+}
+
+/* 버튼 높이: 50 */
 .sign-up_button {
     cursor: pointer;
     background-color: #C4C4C4;
     border: 1px solid black;
     font-weight: bolder;
+    padding-left: 0;
+}
+
+.sign-up_button > button {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sign-up_button > button:hover {
+    background-color: #000;
+    color: #fff;
+    transition: all 0.3s ease;
 }

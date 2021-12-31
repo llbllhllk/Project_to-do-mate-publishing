@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* Find ID */
+.find-id_ {
+  position: relative;
+}
+
+.find-id__form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.find-id_title {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.find-id__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.find-id__list:last-child {
+  margin-top: 30px;
+}
+
+.find-id__list__container {
+  display: flex;
+}
+
+.find-id__input-title {
+  display: block;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.find-id__input-container {
+  position: relative;
+}
+
+.find-id__input-container::after {
+  display: block;
+  content: "\f00c";
+  font-family: FontAwesome;
+  color: #cfd2d4;
+  position: absolute;
+  left: 465px;
+  top: 10px;
+}
+
+.find-id__timer {
+  margin-left: 8px;
+  font-size: 14px;
+  color: red;
+}
+
+.find-id__input {
+  height: 35px;
+  padding-left: 14px;
+}
+
+.find-id__input,
+.find-id__btn {
+  display: block;
+  width: 500px;
+  font-size: 14px;
+  font-family: "Nanum Gothic", sans-serif;
+  border: 1px solid #ccd2d8;
+}
+
+.find-id__btn {
+  height: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #c4c4c4;
+  border: 1px solid black;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.find-id__btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.find-id__alert {
+  margin-top: 6px;
+  height: 12px;
+}
+
+/* Alert */
+.find-id__alert-info {
+  display: none;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.wrong {
+  color: red;
+}
+
+.correct {
+  color: #696564;
+}
+
+.active {
+  display: block;
+}
+
+.close {
+  display: none;
+}

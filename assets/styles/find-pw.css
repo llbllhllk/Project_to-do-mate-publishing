@@ -13,39 +13,6 @@ input:focus {
   outline: none;
 }
 
-/* Header */
-.header {
-  width: 100%;
-  background-color: #000;
-  height: 94px;
-}
-
-.header__title {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header__title > a {
-  font-family: "Roboto", sans-serif;
-  color: #fff;
-  font-size: 32x;
-  text-decoration: none;
-  font-style: italic;
-}
-
-.header__prev-btn {
-  position: absolute;
-  top: 47px;
-  left: 30px;
-  transform: translateY(-50%);
-  border: none;
-  background-color: transparent;
-  color: #fff;
-}
-
 /* Find PW */
 .find-pw_ {
   position: relative;
@@ -80,8 +47,17 @@ input:focus {
   margin-top: 30px;
 }
 
-.find-pw__list__container {
-  display: flex;
+.find-pw__input-container {
+  position: relative;
+}
+
+.find-pw__input-container::after {
+  content: "\f00c";
+  font-family: FontAwesome;
+  color: #cfd2d4;
+  position: absolute;
+  left: 465px;
+  top: 10px;
 }
 
 .find-pw__input-title {
@@ -98,30 +74,21 @@ input:focus {
 }
 
 .find-pw__input {
-  position: relative;
+  height: 35px;
   padding-left: 14px;
-}
-
-.find-pw__input::after {
-  content: "\f00c";
-  font-family: FontAwesome;
-  color: #cfd2d4;
-  position: absolute;
-  left: 465px;
-  top: 10px;
 }
 
 .find-pw__input,
 .find-pw__btn {
   display: block;
   width: 500px;
-  height: 35px;
   font-size: 14px;
   font-family: "Nanum Gothic", sans-serif;
   border: 1px solid #ccd2d8;
 }
 
 .find-pw__btn {
+  height: 50px;
   margin-top: 20px;
   cursor: pointer;
   background-color: #c4c4c4;
@@ -135,27 +102,34 @@ input:focus {
   color: #fff;
 }
 
+/* Certification */
+.find-pw__list__container {
+  display: flex;
+}
+
+/* Alert */
 .find-pw__alert {
   margin-top: 6px;
   height: 12px;
 }
 
-/* Alert */
-.find-pw__info {
+.find-pw__alert-info {
   display: none;
+  font-family: "Nanum Gothic", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  color: #696564;
-  font-family: "Nanum Gothic", sans-serif;
-}
-
-.correct {
-  display: block;
 }
 
 .wrong {
-  display: block;
   color: red;
+}
+
+.correct {
+  color: #696564;
+}
+
+.active {
+  display: block;
 }
 
 .close {

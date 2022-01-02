@@ -9,8 +9,16 @@
 	height: 94px;
 }
 
+
+.header__tab-button {
+	background: no-repeat url('/assets/images/tab-button.png');	
+	background-size: contain;
+}
+
 .header__prev-button,
 .header__tab-button {
+	width: 25px;
+	height: 25px;
 	border: none;
 	background-color: transparent;
 	position: absolute;

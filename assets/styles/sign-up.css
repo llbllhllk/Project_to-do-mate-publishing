@@ -3,21 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 a {
     text-decoration:none;
     color: white;
 }
-
 ul, li {
     list-style: none;
 }
-
 /* header */
 input:focus {
     outline:none;
 }
-
 .header {
     background-color: #000;
     height: 94px;
@@ -87,15 +83,12 @@ p.sign-err {
     display: none;
     font-family: 'Nanum Gothic', sans-serif;
 }
-
 p.active {
     display: block;
 }
-
 p.hide {
     display: none;
 }
-
 /* 버튼 높이: 50 */
 .sign-up_button {
     cursor: pointer;
@@ -104,13 +97,11 @@ p.hide {
     font-weight: bolder;
     padding-left: 0;
 }
-
 .sign-up_button > button {
     width: 100%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
-
 .sign-up_button > button:hover {
     background-color: #000;
     color: #fff;

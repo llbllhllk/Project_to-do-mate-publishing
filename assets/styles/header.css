@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+body {
+	user-select: none;
+}
+
 /* Header */
 .header {
 	background-color: #000;

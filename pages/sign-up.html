@@ -4,70 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/7c8bb5dd01.js" crossorigin="anonymous"></script>
-
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto:ital,wght@0,900;1,700&display=swap" rel="stylesheet">
-
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/styles/sign-up.css">
-    <title>sign-up</title>
+    <title> "회원가입 - ToDo Mate" </title>
 </head>
 <body>
     <!-- Header -->
     <header class="header">
-    <h1 class="header_title">ToDo Mate</h1>
+        <h1 class="header_title">
+            <a href="#">
+                ToDo Mate
+            </a>
+        </h1>
     </header>
-    <!-- Sign up -->
-    <ul class="sign-up_list">
-        <h1 class="sign-up_title">SIGN UP</h1>
-        <li class="sign_list id_list">
-            <h3 class="sign_item_title text_id">아이디</h3>
-            <div class="sign_input input_id">
-                <input type="text" class="sign_input_item userId" placeholder="아이디를 입력해주세요." minlength="4">
-            </div>
-            <p class="sign-info">영문/숫자 4자 이상을 입력해 주세요.</p>
-            <p class="sign-err">아이디는 영문/숫자 4자 이상이어야 합니다.</p>
-        </li>
-        <li class="sign_list pw_list">
-            <h3 class="sign_item_title text_pw">비밀번호</h3>
-            <div class="sign_input input_pw">
-                <input type="text" class="sign_input_item userPw" placeholder="비밀번호를 입력해주세요."  minlength="8" maxlength="20">
-            </div>
-            <p class="sign-info">8 ~ 20자의 영문 대/소문자, 숫자, 특수문자를 사용하세요.</p>
-            <p class="sign-err">비밀번호는 영문 대/소문자, 숫자, 특수문자를 사용한 8 ~ 20자이어야 합니다.</p>
-        </li>
-        <li class="sign_list confirm-pw_list">
-            <h3 class="sign_item_title text_confirm-pw">비밀번호 확인</h3>
-            <div class="sign_input input_confirm-pw">
-                <input type="text" class="sign_input_item userPwConfirm" placeholder="비밀번호를 다시 입력해주세요.">
-            </div>
-            <p class="sign-err">비밀번호가 일치하지 않습니다.</p>
-        </li>
-        <li class="sign_list name_list">
-            <h3 class="sign_item_title text_name">이름</h3>
-            <div class="sign_input input_user-name">
-                <input type="text" class="sign_input_item userName" placeholder="이름을 입력해주세요.">
-            </div>
-        </li>
-        <li class="sign_list nickname_list">
-            <h3 class="sign_item_title text_nickname">닉네임</h3>
-            <div class="sign_input input_nickname">
-                <input type="text" class="sign_input_item userNickname" placeholder="닉네임을 입력해주세요.">
-            </div>
-            <p class="sign-err">이미 존재하는 닉네임입니다.</p>
-        </li>
-        <li class="sign_list email_list">
-            <h3 class="sign_item_title text_email">이메일</h3>
-            <div class="sign_input input_email">
-                <input type="text" class="sign_input_item userEmail" placeholder="이메일을 입력해주세요.">
-            </div>
-            <p class="sign-info">이메일을 입력해주세요.</p>
-        </li>
-        <button class="sign-up_button">회원가입</button>
-    </ul>
+    <!-- Sign-up -->
+    <main class="sign-up">
+        <form class="sign-up_form" action="#" method="POST">
+            <h1 class="sign-up_title">Sign Up</h1>
+            <ul class="sign-up_list">
+                <li class="sign_list id_list">
+                    <label for="userId" class="sign_item_title">아이디</ㅣ>
+                    <div class="sign_input">
+                        <input type="text" id="userId" class="sign_input_item" placeholder="아이디를 입력해주세요." minlength="4">
+                    </div>
+                    <div class="sign-info">
+                        <p class="sign-err">이미 존재하는 아이디입니다.</p>
+                    </div>
+                </li>
+                <li class="sign_list pw_list">
+                    <label for="userPw" class="sign_item_title">비밀번호</label>
+                    <div class="sign_input">
+                        <input type="text" id="userPw" class="sign_input_item" placeholder="비밀번호를 입력해주세요."  minlength="8" maxlength="20">
+                    </div>
+                    <div class="sign-info">
+                        <p class="">8 ~ 20자의 영문 대/소문자, 숫자, 특수문자를 사용하세요.</p>
+                        <p class="sign-err">비밀번호는 영문 대/소문자, 숫자, 특수문자를 사용한 8 ~ 20자이어야 합니다.</p>
+                    </div>
+                </li>
+                <li class="sign_list confirm-pw_list">
+                    <label for="userPwConfirm" class="sign_item_title">비밀번호 확인</label>
+                    <div class="sign_input">
+                        <input type="text" id="userPwConfirm" class="sign_input_item" placeholder="비밀번호를 다시 입력해주세요.">
+                    </div>
+                    <div class="sign-info">
+                        <p class="sign-err">비밀번호가 일치하지 않습니다.</p>
+                    </div>
+                </li>
+                <li class="sign_list name_list">
+                    <label for="userName" class="sign_item_title">이름</label>
+                    <div class="sign_input">
+                        <input type="text" id="userName" class="sign_input_item" placeholder="이름을 입력해주세요.">
+                    </div>
+                </li>
+                <li class="sign_list nickname_list">
+                    <label for="userNickname" class="sign_item_title">닉네임</label>
+                    <div class="sign_input">
+                        <input type="text" id="userNickname" class="sign_input_item" placeholder="닉네임을 입력해주세요.">
+                    </div>
+                    <div class="sign-info">
+                        <p class="sign-err">이미 존재하는 닉네임입니다.</p>
+                    </div>
+                </li>
+                <li class="sign_list email_list">
+                    <label for="userEmail" class="sign_item_title">이메일</label>
+                    <div class="sign_input">
+                        <input type="text" id="userEmail" class="sign_input_item" placeholder="이메일을 입력해주세요.">
+                    </div>
+                    <div class="sign-info">
+                        <p>이메일을 입력해주세요.</p>
+                        <p class="sign-err">이메일이 양식에 맞지 않습니다.</p>
+                    </div>
+                </li>
+                <li class="sign-up_button">
+                    <button type="submit">회원가입</button>
+                </li>
+            </ul>
+        </form>
+    </main>
 </body>
 </html>

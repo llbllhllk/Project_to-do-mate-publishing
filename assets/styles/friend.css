@@ -1,0 +1,50 @@
+ul,
+li {
+	list-style: none;
+}
+
+button {
+	border: 0;
+	outline: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+/* body */
+body {
+	background-color: black;
+	color: white;
+}
+
+.main {
+	position: absolute;
+	left: 50%;
+	top: 150px;
+	transform: translate(-50%);
+	width: 500px;
+}
+
+/* tab */
+.friend-tab {
+	display: flex;
+	justify-content: space-between;
+}
+
+.friend-tab .active {
+	border-bottom: 2px solid #00a3ff;
+}
+
+.friend-tab li {
+	padding: 0 0 4px 0;
+}
+
+.friend-tab button {
+	font-size: 18px;
+	color: white;
+}
+
+.friend-tab span {
+	text-align: center;
+	color: #00a3ff;
+	font-size: 18px;
+}

@@ -13,11 +13,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/styles/main.css">
   <link rel="stylesheet" href="/assets/styles/header.css">
   <link rel="stylesheet" href="/assets/styles/tab.css">
   <link rel="stylesheet" href="/assets/styles/feed.css">
+
+  <!-- JS -->
+  <script src="/assets/javascripts/main.js" defer></script>
+
+  <!-- Title -->
   <title>ToDo Mate</title>
 
 </head>
@@ -25,9 +31,7 @@
 <body>
   <!-- Header -->
   <header class="header">
-    <button type="button" class="header__tab-button">
-      <img src="/assets/images/tab-button.png" alt="tab button">
-    </button>
+    <button type="button" class="header__tab-button"></button>
     <h1 class="header__title">
       <a href="#">
         ToDo Mate
@@ -37,6 +41,7 @@
 
   <!-- Tab -->
   <div class="tab">
+    <button type="button" class="tab__delete-button"></button>
     <!-- User -->
     <div class="user">
       <div class="user__info">

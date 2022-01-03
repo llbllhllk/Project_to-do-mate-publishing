@@ -38,7 +38,7 @@
         <!-- main-container -->
         <div class="container">
             <h1 class="login-title">LOGIN</h1>
-            <form method="POST" class="login-form" action"/">
+            <form method="POST" class="login-form" action"/login">
                 <label for="user-id">아이디</label>
                 <div class="login-form-control">
                     <input type="text" 
@@ -64,11 +64,11 @@
                 <!-- 아이디/비밀번호 관련 에러 메시지 --> 
                 <div class="error_msg">
                     <ul class="mismatch_msg active">
-                        <li>아이디 또는 비밀번호가 잘못 입력 되었습니다.</li>
-                        <li><strong>아이디</strong>와 <strong>비밀번호</strong>를 정확히 입력해 주세요.</li>
+                        <li th:if="${loginFlag}==2">아이디 또는 비밀번호가 잘못 입력 되었습니다.</li>
+                        <li th:if="${loginFlag}==2"><strong>아이디</strong>와 <strong>비밀번호</strong>를 정확히 입력해 주세요.</li>
                     </ul>
                     <ul class="empty_msg active">
-                        <li><strong>아이디</strong>와 <strong>비밀번호</strong>를 입력해 주세요.</li>
+                        <li th:if="${loginFlag}==1"><strong>아이디</strong>와 <strong>비밀번호</strong>를 입력해 주세요.</li>
                     </ul>
                 </div>
                 <button type="submit" class="login-form-btn">로그인</button>

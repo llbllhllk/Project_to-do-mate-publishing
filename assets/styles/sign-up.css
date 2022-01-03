@@ -3,28 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+h1 {
+    margin: 0;
+}
+
 a {
     text-decoration:none;
     color: white;
 }
+
 ul, li {
     list-style: none;
 }
-/* header */
+
 input:focus {
     outline:none;
 }
-.header {
-    background-color: #000;
-    height: 94px;
-}
-.header_title {
-    text-align: center;
-    font-style: italic;
-    line-height: 94px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-}
+
 /* Sign up */
 .sign-up {
     display: flex;
@@ -33,25 +29,30 @@ input:focus {
     margin-top: 30px;
     margin-bottom: 70px;
 }
+
 .sign-up_title {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     margin-bottom: 40px;
 }
+
 .sign_list {
     margin-bottom: 30px;
 }
+
 .sign_item_title {
     font-weight: normal;
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 16px;
     margin-bottom: 12px;
 }
+
 .sign_input {
     position: relative;
     margin-top: 7px;
 }
+
 .sign_input::after {
     content: "\f00c";
     font-family:FontAwesome;
@@ -60,6 +61,7 @@ input:focus {
     left: 465px;
     top: 10px;
 }
+
 .sign_input_item,
 .sign-up_button {
     width: 500px;
@@ -70,12 +72,14 @@ input:focus {
     border-radius: 0;
     border: 1px solid #ccd2d8;
 }
+
 .sign-info > p {
     margin-top: 6px;
     font-size: 12px;
     color: #696564;
     font-family: 'Nanum Gothic', sans-serif;
 }
+
 p.sign-err {
     margin-top: 6px;
     font-size: 12px;
@@ -83,25 +87,33 @@ p.sign-err {
     display: none;
     font-family: 'Nanum Gothic', sans-serif;
 }
+
 p.active {
     display: block;
 }
+
 p.hide {
     display: none;
 }
+
 /* 버튼 높이: 50 */
 .sign-up_button {
-    cursor: pointer;
-    background-color: #C4C4C4;
-    border: 1px solid black;
-    font-weight: bolder;
+    height: 50px;
     padding-left: 0;
 }
+
 .sign-up_button > button {
     width: 100%;
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    
+    font-weight: 700;
+    background-color: #C4C4C4;
+    border: 1px solid black;
+    font-family: 'Nanum Gothic', sans-serif;
+    cursor: pointer;
+    
 }
+
 .sign-up_button > button:hover {
     background-color: #000;
     color: #fff;
